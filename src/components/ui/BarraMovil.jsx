@@ -1,12 +1,17 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
+import { CSSTransition } from 'react-transition-group';
 
-const MovilBarra = styled.div`
+const MovilBarra = styled.header`
  background-color: var(--primario);
  padding: 1.2rem 2.5rem;
  display: flex;
  justify-content: space-between;
  align-items: center;
+
+ @media (min-width: 1024px) {
+    display: none;
+ }
 `;
 
 const Logo = styled.div`
@@ -27,26 +32,34 @@ const IconMovilMenu = styled.button`
 const SeccionesMovil = styled.div`
 
     ul {
-        transition: all 2s ease;
+        transition: all .4s ease;
     }
 
     li {
         padding: 1.3rem 0;
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 2px solid #e1e1e1;
     }
 
     button {
         font-size: 1.5rem;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width: 1024px) {
+    display: none;
     }
 `;
 
-const Barra = () => {
+const BarraMovil = () => {
 
     const [seccionesMovil, setSeccionesMovil] = useState(false);
 
     const handleClick = () => {
 
-        if(seccionesMovil) {
+        if (seccionesMovil) {
             setSeccionesMovil(false);
         } else {
             setSeccionesMovil(true);
@@ -70,9 +83,17 @@ const Barra = () => {
                 </div>
             </MovilBarra>
 
-            {seccionesMovil ? (
 
-                <SeccionesMovil>
+            <SeccionesMovil>
+
+                <CSSTransition
+                    timeout={{ enter: 400, exit: 400 }}
+                    in={seccionesMovil}
+                    classNames="drop"
+                    unmountOnExit
+                    onEntered={() => setSeccionesMovil(true)}
+                    onExit={() => setSeccionesMovil(false)}
+                >
                     <ul>
                         <li>
                             <button type="button">Destacado</button>
@@ -84,12 +105,12 @@ const Barra = () => {
                             <button type="button">Contacto</button>
                         </li>
                     </ul>
-                </SeccionesMovil>
+                </CSSTransition>
+            </SeccionesMovil>
 
-            ) : null }
 
         </>
     );
 }
 
-export default Barra;
+export default BarraMovil;

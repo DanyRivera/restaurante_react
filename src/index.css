@@ -33,5 +33,25 @@ img {
 button {
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
+/*Animaciones del menu */
+.drop-enter {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  
+.drop-enter-active {
+opacity: 1;
+transform: translateY(1%);
+}
+
+.drop-exit {
+opacity: 1;
+}
+
+.drop-exit-active {
+opacity: 0;
+transform: translateY(-50%);
+}
