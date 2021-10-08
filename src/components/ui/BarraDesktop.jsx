@@ -14,6 +14,9 @@ const Header = styled.header`
         position: fixed;
         width: 100%;
         z-index: 2;
+        -webkit-box-shadow: 0px 13px 17px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 17px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 13px 17px -8px rgba(0,0,0,0.75);
     }
 `;
 
@@ -73,7 +76,7 @@ const BarraDesktop = () => {
                     <Secciones>
                         <ul>
                             <li>
-                                <Link 
+                                <Link
                                     to="destacado"
                                     smooth={true}
                                     duration={1000}
@@ -89,7 +92,7 @@ const BarraDesktop = () => {
                                 >Ubicación</Link>
                             </li>
                             <li>
-                                <Link 
+                                <Link
                                     to="horarios"
                                     smooth={true}
                                     duration={1000}
