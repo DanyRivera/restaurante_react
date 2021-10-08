@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'react-scroll';
 
 //Reutilizable
 import { Contenedor } from './Reutilizable';
@@ -10,6 +11,9 @@ const Header = styled.header`
         display: block;
         background-color: var(--primario);
         padding: 2.5rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
     }
 `;
 
@@ -45,7 +49,7 @@ const Secciones = styled.div`
         }
     }
 
-    button {
+    a {
         color: #fff;
         font-size: 2rem;
 
@@ -56,25 +60,41 @@ const Secciones = styled.div`
 `;
 
 const BarraDesktop = () => {
+
     return (
-        <Header>
+        <Header >
             <Contenedor>
                 <ContenedorHeader>
                     <RedesSociales>
-                        <a target="_blank" href="https://facebook.com">
+                        <a target="_blank" rel="noreferrer" href="https://es-la.facebook.com/cocopachebar/">
                             <i className="fab fa-facebook"></i>
                         </a>
                     </RedesSociales>
                     <Secciones>
                         <ul>
                             <li>
-                                <button type="button">Destacado</button>
+                                <Link 
+                                    to="destacado"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-100}
+                                >Destacado</Link>
                             </li>
                             <li>
-                                <button type="button">Dirección</button>
+                                <Link
+                                    to="ubicacion"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-100}
+                                >Ubicación</Link>
                             </li>
                             <li>
-                                <button type="button">Contacto</button>
+                                <Link 
+                                    to="horarios"
+                                    smooth={true}
+                                    duration={1000}
+                                    offset={-100}
+                                >Horarios</Link>
                             </li>
                         </ul>
                     </Secciones>

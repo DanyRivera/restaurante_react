@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-scroll';
 
 const MovilBarra = styled.header`
  background-color: var(--primario);
@@ -14,13 +15,16 @@ const MovilBarra = styled.header`
  }
 `;
 
-const Logo = styled.div`
+const RedesSociales = styled.div`
+ 
+ padding-right: 1.5rem;
+ border-right: 1px solid #fff;
 
-    p {
-        color: #fff;
-    }
+ i {
+    color: #fff;
+    font-size: 2.5rem;
+ }
 `;
-
 const IconMovilMenu = styled.button`
 
     i {
@@ -30,13 +34,14 @@ const IconMovilMenu = styled.button`
 `;
 
 const SeccionesMovil = styled.div`
+    height: auto;
 
     ul {
         transition: all .4s ease;
     }
 
     li {
-        padding: 1.3rem 0;
+        padding: 1.3rem 0 1.3rem 1.5rem;
         border-bottom: 2px solid #e1e1e1;
     }
 
@@ -67,13 +72,16 @@ const BarraMovil = () => {
 
     }
 
+
     return (
         <>
 
             <MovilBarra>
-                <Logo>
-                    <p>Logo</p>
-                </Logo>
+                <RedesSociales>
+                    <a target="_blank" rel="noreferrer" href="https://es-la.facebook.com/cocopachebar/">
+                        <i className="fab fa-facebook"></i>
+                    </a>
+                </RedesSociales>
                 <div>
                     <IconMovilMenu
                         onClick={() => handleClick()}
@@ -96,13 +104,25 @@ const BarraMovil = () => {
                 >
                     <ul>
                         <li>
-                            <button type="button">Destacado</button>
+                            <Link
+                                to="destacado"
+                                smooth={true}
+                                duration={1500}
+                            >Destacado</Link>
                         </li>
                         <li>
-                            <button type="button">Dirección</button>
+                            <Link
+                                to="ubicacion"
+                                smooth={true}
+                                duration={1500}
+                            >Ubicación</Link>
                         </li>
                         <li>
-                            <button type="button">Contacto</button>
+                            <Link
+                                to="horarios"
+                                smooth={true}
+                                duration={1500}
+                            >Horarios</Link>
                         </li>
                     </ul>
                 </CSSTransition>

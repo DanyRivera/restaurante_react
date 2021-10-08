@@ -9,9 +9,10 @@ const HeroHeader = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 
     @media (min-width: 1024px) {
-        height: 80vh;
+        height: 100vh;
         background-position: center center;
     }
 
@@ -27,25 +28,39 @@ const HeroHeader = styled.div`
 `;
 
 const ContenidoHeader = styled.div`
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+
+    @media (min-width: 300px) {
+        padding: 0;
+    }
 
     h1 {
         margin: 0;
         color: #fff;
         position: absolute;
         z-index: 1;
+
+        @media (min-width: 768px) {
+            font-size: 5.5rem;
+        }
     }
 `;
 
 const Hero = () => {
-    return ( 
+    return (
         <HeroHeader>
             <Contenedor>
                 <ContenidoHeader>
-                    <h1>Nombre del Restaurant</h1>
+                    <h1>CocoPache Snack-Bar</h1>
                 </ContenidoHeader>
             </Contenedor>
-        </HeroHeader>    
+        </HeroHeader>
     );
 }
- 
+
 export default Hero;
