@@ -46,7 +46,7 @@ const Contacto = () => {
             <h3>Contacto</h3>
             <InfoContacto>
                 <p><span>Tel:</span> <a href="tel:+52-222-368-8163">222 368 8163</a></p>
-                <p><span>WhatsApp:</span> 222 125 6696</p>
+                <p><span>WhatsApp: </span><a href="https://api.whatsapp.com/send?phone=522221256696&app=facebook&entry_point=page_cta&fbclid=IwAR3NeCT82q99Pe8Tb-dFVsNCHPJb5Ij_03iFsO5S8Ce6SnyBU-u0KzDzyIw">222 125 6696</a></p>
                 <p><span>FaceBook:</span> @cocopachebar</p>
                 <p><span>Ubicación:</span> Puebla de Zaragoza</p>
             </InfoContacto>
