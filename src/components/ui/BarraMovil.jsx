@@ -78,7 +78,7 @@ const BarraMovil = () => {
 
             <MovilBarra>
                 <RedesSociales>
-                    <a target="_blank" rel="noreferrer" href="https://es-la.facebook.com/cocopachebar/">
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Taqueria-Cristo-Rey-305266880077678/?ref=page_internal">
                         <i className="fab fa-facebook"></i>
                     </a>
                 </RedesSociales>

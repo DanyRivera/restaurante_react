@@ -62,14 +62,11 @@ const Ubicacion = () => {
                 <ContenedorDireccion>
                     <h3>Dirección</h3>
                     <p>
-                        Boulevard de las Torres 1674
-                        Granjas de San Isidro
-                        72589 Puebla, PUE
-                        México
+                        Prolongación 14 Sur #6369 72440 Puebla de Zaragoza, México.
                     </p>
                     <ComoLlegarBtn>
-                        <a 
-                            href="https://www.google.com/maps/dir//El+CocoPache+Restaurante+bar/@19.0094065,-98.2284844,13.04z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85cfbf44dcce3e0d:0xcbec10ee57118ee8!2m2!1d-98.2070022!2d18.992621"
+                        <a
+                            href="https://www.google.com/maps/dir//Taqueria+Cristo+Rey+Prol.+de+la+14+Sur+6369+Loma+Linda+72104+Puebla,+Pue./@19.0012572,-98.2086766,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x85cfbf59bde68ee1:0x10aa99119c318819"
                             target="_blank"
                             rel="noreferrer"
                         >Como Llegar</a>

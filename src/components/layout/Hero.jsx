@@ -56,7 +56,7 @@ const Hero = () => {
         <HeroHeader>
             <Contenedor>
                 <ContenidoHeader>
-                    <h1>CocoPache Snack-Bar</h1>
+                    <h1>Taquería "Cristo Rey"</h1>
                 </ContenidoHeader>
             </Contenedor>
         </HeroHeader>

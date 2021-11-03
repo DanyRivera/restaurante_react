@@ -45,9 +45,9 @@ const Contacto = () => {
         <ContenedorContacto>
             <h3>Contacto</h3>
             <InfoContacto>
-                <p><span>Tel:</span> <a href="tel:+52-222-368-8163">222 368 8163</a></p>
-                <p><span>WhatsApp: </span><a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=522221256696&app=facebook&entry_point=page_cta&fbclid=IwAR3NeCT82q99Pe8Tb-dFVsNCHPJb5Ij_03iFsO5S8Ce6SnyBU-u0KzDzyIw">222 125 6696</a></p>
-                <p><span>FaceBook:</span> @cocopachebar</p>
+                <p><span>Tel:</span> <a href="tel:+52-221-215-3828">221 215 3828</a></p>
+                <p><span>WhatsApp: </span><a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=522212153828&fbclid=IwAR0OzhJObsdf73aFEclaITKx0IYQLplSo4REBhFQ79ZgY1-kfFqp6aDavwI">221 215 3828</a></p>
+                <p><span>FaceBook:</span> @Taqueria_Cristo_Rey</p>
                 <p><span>Ubicación:</span> Puebla de Zaragoza</p>
             </InfoContacto>
         </ContenedorContacto>

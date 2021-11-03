@@ -69,13 +69,13 @@ const Horarios = () => {
                     <SeccionHorarios>
                         <h3>Horarios</h3>
                         <ul>
-                            <li>lun: 12:00-22:00</li>
-                            <li>mar: 12:00-22:00</li>
-                            <li>mié: 12:00-22:00</li>
-                            <li>jue: 8:00-22:00</li>
-                            <li>vie: 8:00-22:00</li>
-                            <li>sab: 8:00-22:00</li>
-                            <li>sab: 8:00-13:00</li>
+                            <li>lun: 16:00-23:00</li>
+                            <li>mar: 16:00-23:00</li>
+                            <li>mié: 16:00-23:00</li>
+                            <li>jue: 16:00-23:00</li>
+                            <li>vie: 14:00-23:00</li>
+                            <li>sab: 14:00-23:00</li>
+                            <li>dom: 14:00-23:00</li>
                         </ul>
                     </SeccionHorarios>
 
